@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="headline">Shopping list</h1>
+                <p>A simple shopping list that uses IndexedDB</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+           <div class="container">
+                <form id="add_item_form" action="">
+                    <input type="text" id="item" name="item" minlength="3" maxlength="100" required />
+                    <div class="buttons-container">
+                        <button type="submit">Add item</button>
+                        <button type="button">Add quantity</button>
+                    </div>
+                </form>
+           </div>
+        </section>
+
+        <section class="items-section">
+            <div class="container">
+                <ul id="items_list"></ul>
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@font-face {
+   font-family: 'Jost';
+   src: local(''),
+        url('fonts/Jost-Light.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('fonts/Jost-Light.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('fonts/Jost-Light.otf') format('opentype');
+   font-style: normal;
+   font-weight: 300;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Jost';
+   src: local(''),
+        url('fonts/Jost-Medium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('fonts/Jost-Medium.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('fonts/Jost-Medium.otf') format('opentype');
+   font-style: normal;
+   font-weight: 500;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Jost';
+   src: local(''),
+        url('fonts/Jost-Bold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('fonts/Jost-Bold.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('fonts/Jost-Bold.otf') format('opentype');
+   font-style: normal;
+   font-weight: 700;
+   font-display: swap;
+}

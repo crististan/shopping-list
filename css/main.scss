@@ -1,0 +1,107 @@
+@import "mixins";
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+/* ----- Globals ----- */
+
+body,
+p,
+ul,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  color: $clr-neutral-0;
+  background-color: $clr-primary-500;
+  font-size: clamp(0.875rem, 1rem, 2vw);
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 2rem, 3vw);
+}
+
+h2 {
+  font-size: clamp(1rem, 1.5rem, 2vw);
+}
+
+.container {
+  width: 100%;
+  padding-inline: 1rem;
+  margin-inline: auto;
+
+  @include tablet() {
+    max-width: 768px;
+    padding-inline: 2rem;
+  }
+
+  @include desktop() {
+    max-width: 1140px;
+  }
+}
+
+/* ----- Header ----- */
+
+/* ----- Hero ----- */
+
+.hero-section {
+  padding: 2rem 0;
+  text-align: center;
+
+  @include tablet() {
+    padding: 3rem 0;
+  }
+
+  .headline {
+    margin-bottom: 0.75rem;
+
+    @include tablet() {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.form-section {
+  #add_item_form {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    input {
+      width: 100%;
+      height: 2.5rem;
+    }
+
+    .buttons-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+
+      button {
+        width: 100%;
+        padding: 0.5rem;
+      }
+    }
+  }
+}

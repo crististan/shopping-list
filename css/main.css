@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ----- Globals ----- */
+body,
+p,
+ul,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  color: #FFFAFA;
+  background-color: #030816;
+  font-size: clamp(0.875rem, 1rem, 2vw);
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 2rem, 3vw);
+}
+
+h2 {
+  font-size: clamp(1rem, 1.5rem, 2vw);
+}
+
+.container {
+  width: 100%;
+  padding-inline: 1rem;
+  margin-inline: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-inline: 2rem;
+  }
+}
+@media (min-width: 1140px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* ----- Header ----- */
+/* ----- Hero ----- */
+.hero-section {
+  padding: 2rem 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .hero-section {
+    padding: 3rem 0;
+  }
+}
+.hero-section .headline {
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 768px) {
+  .hero-section .headline {
+    margin-bottom: 1rem;
+  }
+}
+
+.form-section #add_item_form {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.form-section #add_item_form input {
+  width: 100%;
+  height: 2.5rem;
+}
+.form-section #add_item_form .buttons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.form-section #add_item_form .buttons-container button {
+  width: 100%;
+  padding: 0.5rem;
+}/*# sourceMappingURL=main.css.map */
